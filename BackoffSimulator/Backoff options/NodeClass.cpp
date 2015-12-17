@@ -40,12 +40,12 @@ bool NodeClass::getSendingStatus()
 /***************SETTERS***********************/
 void NodeClass::addConflict()
 {
-    numberOfConflicts++;
+    numberOfConflicts += 1;
 }
 
-void NodeClass::addEnergyPoints(long long numberOf)
+void NodeClass::addEnergyPoints()
 {
-    energyPoints += numberOf;
+    energyPoints++;
 }
 
 void NodeClass::changeStatus()

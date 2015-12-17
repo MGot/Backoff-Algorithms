@@ -17,6 +17,8 @@ public:
     virtual void startSimulation() = 0;
     virtual void showNodes() = 0;
     virtual bool checkNodes() = 0;
+    virtual unsigned long long getRunningTime() = 0;
+    virtual unsigned long long getAmountOfNodes() = 0;
 
     virtual unsigned int countEnergyPoints() = 0;
     void showW(); // showing all slots
@@ -24,7 +26,6 @@ public:
 protected:
     SimulationClass(long long); // CSTR
     std::vector<long long> *W = new std::vector<long long>;  // backoff algorithm window
-
 };
 
 

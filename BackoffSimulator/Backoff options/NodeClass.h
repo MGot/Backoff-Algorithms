@@ -24,14 +24,14 @@ public:
 
     //SETTERS
     void addConflict();  // add specific number of conflicts
-    void addEnergyPoints(long long);  // add specific number of energy points
+    void addEnergyPoints();  // add specific number of energy points
     void changeStatus();  // changes sendingStatus to true
 
 private:
-    long long id; // id of thread
-    long long energyPoints;  // number of energy points received by thread
+    unsigned long long id; // id of thread
+    unsigned long long energyPoints;  // number of energy points received by thread
     bool sendingStatus;  // sending status (true = was sent; false = waiting for sending)
-    long long numberOfConflicts; // saving number of conflicts
+    unsigned long long numberOfConflicts; // saving number of conflicts
 };
 
 
